@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <title>Panasonic Lumix Store</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="bg-light">
+
+    <div class="top-bar text-white py-2 d-none d-md-block" style="background-color: #1a1a1a;">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center gap-2">
+                <span class="badge bg-danger text-uppercase px-2 py-1" style="font-size: 11px; font-weight: bold;">Hot News</span>
+                <span class="small text-white-50 m-0">Panasonic Lumix S5 Mark II X mới ra mắt - Quay video 10-bit chuyên nghiệp...</span>
+            </div>
+            <div class="d-flex gap-3 text-white-50 small">
+                <span><i class="bi bi-facebook"></i> Facebook</span>
+                <span><i class="bi bi-envelope-fill"></i> Gmail</span>
+            </div>
+        </div>
+    </div>
+
+    <header class="bg-dark text-white py-3 shadow-sm">
+    <div class="container d-flex justify-content-between align-items-center">
+
+        <a href="../index.html" class="text-white text-decoration-none d-flex align-items-center gap-2">
+            <span class="fs-4 fw-bold tracking-wide">PANASONIC LUMIX STORE</span>
+        </a>
+
+        <div class="d-flex align-items-center gap-4">
+
+
+            <a href="gioi-thieu.html" class="text-white text-decoration-none">
+                Giới thiệu
+            </a>
+
+            <a href="lien-he.html" class="text-white text-decoration-none">
+                Liên hệ
+            </a>
+
+            <a href="gio-hang.html" class="text-white text-decoration-none position-relative d-flex align-items-center gap-2">
+                <div class="position-relative">
+                    <span class="fs-4">🛒</span>
+                    <span id="cart-count"
+                          class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                          style="font-size: 0.65rem;">
+                        0
+                    </span>
+                </div>
+
+                <span class="d-none d-sm-inline ms-1">Giỏ hàng</span>
+            </a>
+
+        </div>
+
+    </div>
+</header>
+
+    <div class="container mb-5 mt-4">
+        <h2 class="mb-4 fw-bold text-dark border-bottom pb-2">Danh mục sản phẩm</h2>
+
+        <div class="filter-bar mb-4">
+
+    <div class="filter-group">
+        <span class="filter-title">Máy ảnh</span>
+
+        <button class="btn-filter active" onclick="filterData('all')">
+            Tất cả
+        </button>
+
+        <button class="btn-filter" onclick="filterData('camera_all')">
+            Tất cả Máy ảnh
+        </button>
+
+        <button class="btn-filter" onclick="filterData('camera_fullframe')">
+            Full-frame
+        </button>
+
+        <button class="btn-filter" onclick="filterData('camera_m43')">
+            M43
+        </button>
+    </div>
+
+    <div class="filter-group">
+        <span class="filter-title">Ống kính</span>
+
+        <button class="btn-filter" onclick="filterData('lens_all')">
+            Tất cả Ống kính
+        </button>
+
+        <button class="btn-filter" onclick="filterData('lens_fullframe')">
+            Full-frame
+        </button>
+
+        <button class="btn-filter" onclick="filterData('lens_m43')">
+            Micro Four Thirds
+        </button>
+    </div>
+
+</div>
+
+        <div class="product-list row row-cols-2 row-cols-md-4 g-3" id="product-list">
+        </div>
+    </div>
+
+    <script>
+        // Hàm hiển thị mặc định tất cả sản phẩm
+        function renderDefault() {
+            const container = document.getElementById("product-list");
+            if (!container) return;
+            container.innerHTML = ""; 
+            
+            if (typeof productlist !== 'undefined') {
+                productlist.forEach(function(item){
+                    addproduct(item.id, item.name, item.price, item.image, item.productLink);
+                });
+            }
+        }
+
+        // Hàm xử lý lọc dữ liệu
+        function filterData(type) {
+            const container = document.getElementById("product-list");
+            if (!container || typeof productlist === 'undefined') return;
+            container.innerHTML = "";
+            
+            productlist.forEach(function(item) {
+                let productNameLower = item.name.toLowerCase();
+
+                if (type === 'all') {
+                    addproduct(item.id, item.name, item.price, item.image, item.productLink);
+                } 
+                else if (type === 'camera_all' && item.cat === 'camera') {
+                    addproduct(item.id, item.name, item.price, item.image, item.productLink);
+                } 
+                else if (type === 'camera_fullframe' && item.cat === 'camera' && item.system === 'fullframe') {
+                    addproduct(item.id, item.name, item.price, item.image, item.productLink);
+                } 
+                else if (type === 'camera_m43' && item.cat === 'camera' && item.system === 'm43') {
+                    addproduct(item.id, item.name, item.price, item.image, item.productLink);
+                } 
+                else if (type === 'lens_all' && item.cat === 'lens') {
+                    addproduct(item.id, item.name, item.price, item.image, item.productLink);
+                } 
+                else if (type === 'lens_fullframe' && item.cat === 'lens' && item.system === 'fullframe') {
+                    addproduct(item.id, item.name, item.price, item.image, item.productLink);
+                } 
+                else if (type === 'lens_m43' && item.cat === 'lens' && item.system === 'm43') {
+                    addproduct(item.id, item.name, item.price, item.image, item.productLink);
+                }
+            });
+        }
+
+        // Đợi toàn bộ trang và file script.js nạp xong hoàn toàn rồi mới thực thi
+        window.onload = function() {
+            renderDefault();
+            
+            // Tự động gọi lại hàm cập nhật badge từ file script.js để xóa lỗi hiển thị số 0/NaN cũ
+            if (typeof updateCartBadge === 'function') {
+                updateCartBadge();
+            }
+
+            // Quản lý hiệu ứng đổi trạng thái Active của các nút bấm lọc
+            const filterButtons = document.querySelectorAll('.mb-4 .btn');
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    filterButtons.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+        };
+    </script>
+</body>
+</html>

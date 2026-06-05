@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <title>Panasonic Lumix Store</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
+</head>
+
+<body class="bg-light">
+
+    <!-- Header -->
+    <header class="bg-dark text-white py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <a href="index.html" class="text-white text-decoration-none">
+                <h3 class="m-0 fw-bold">PANASONIC LUMIX STORE</h3>
+            </a>
+
+            <a href="san-pham.html" class="btn btn-outline-light">
+                <i class="bi bi-arrow-left"></i>
+                Tiếp tục mua sắm
+            </a>
+
+        </div>
+    </header>
+
+    <!-- Nội dung -->
+    <div class="container mt-4">
+
+        <h2 class="fw-bold border-bottom pb-2 mb-4">
+            🛒 Giỏ hàng của bạn
+        </h2>
+
+        <div id="cart-container">
+
+        </div>
+
+        <div class="card mt-4">
+            <div class="card-body">
+
+                <h4>
+                    Tổng tiền:
+                    <span id="total-price" class="text-danger fw-bold">
+                        0 VNĐ
+                    </span>
+                </h4>
+<div class="card mt-4">
+    <div class="card-header bg-dark text-white">
+        Thông tin khách hàng
+    </div>
+
+    <div class="card-body">
+
+        <div class="mb-3">
+            <label class="form-label">Họ và tên</label>
+            <input type="text" id="fullname" class="form-control">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Ngày sinh</label>
+            <input type="date" id="birthday" class="form-control">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" id="email" class="form-control">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Số CCCD</label>
+            <input type="text" id="cccd" class="form-control">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Địa chỉ nhà</label>
+            <textarea id="address" class="form-control"></textarea>
+        </div>
+
+        
+
+    </div>
+</div>
+                <button class="btn btn-success mt-3" onclick="checkout()">
+                    Thanh toán
+                </button>
+
+            </div>
+        </div>
+
+    </div>
+
+<script>
+
+function renderCart() {
+
+    let cart = [];
+
+    try {
+        cart = JSON.parse(localStorage.getItem("lumix_cart")) || [];
+    } catch (e) {
+        cart = [];
+    }
+
+    const container = document.getElementById("cart-container");
+
+    container.innerHTML = "";
+
+    let total = 0;
+
+    if (cart.length === 0) {
+
+        container.innerHTML = `
+            <div class="alert alert-warning">
+                Giỏ hàng đang trống.
+            </div>
+        `;
+
+        document.getElementById("total-price").textContent = "0 VNĐ";
+        return;
+    }
+
+    cart.forEach(function(item, index) {
+
+        let priceNumber = parseInt(item.price.replace(/\D/g, "")) || 0;
+
+        total += priceNumber * item.quantity;
+
+        container.innerHTML += `
+        <div class="card mb-3 shadow-sm">
+            <div class="row g-0">
+
+                <div class="col-md-3 text-center p-2">
+                    <img src="${item.image}"
+                         class="img-fluid"
+                         style="max-height:150px;">
+                </div>
+
+                <div class="col-md-9">
+                    <div class="card-body">
+
+                        <h5>${item.name}</h5>
+
+                        <p class="text-danger fw-bold">
+                            ${item.price}
+                        </p>
+
+                        <div class="d-flex align-items-center gap-2">
+
+                            <button class="btn btn-secondary btn-sm"
+                                    onclick="decreaseQty(${index})">
+                                -
+                            </button>
+
+                            <span class="fw-bold">
+                                ${item.quantity}
+                            </span>
+
+                            <button class="btn btn-secondary btn-sm"
+                                    onclick="increaseQty(${index})">
+                                +
+                            </button>
+
+                            <button class="btn btn-danger btn-sm ms-3"
+                                    onclick="removeItem(${index})">
+                                Xóa
+                            </button>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        `;
+    });
+
+    document.getElementById("total-price").textContent =
+        total.toLocaleString("vi-VN") + " VNĐ";
+}
+
+function increaseQty(index) {
+
+    let cart = JSON.parse(localStorage.getItem("lumix_cart")) || [];
+
+    cart[index].quantity++;
+
+    localStorage.setItem("lumix_cart", JSON.stringify(cart));
+
+    renderCart();
+
+    if (typeof updateCartBadge === "function") {
+        updateCartBadge();
+    }
+}
+
+function decreaseQty(index) {
+
+    let cart = JSON.parse(localStorage.getItem("lumix_cart")) || [];
+
+    if (cart[index].quantity > 1) {
+        cart[index].quantity--;
+    }
+
+    localStorage.setItem("lumix_cart", JSON.stringify(cart));
+
+    renderCart();
+
+    if (typeof updateCartBadge === "function") {
+        updateCartBadge();
+    }
+}
+
+function removeItem(index) {
+
+    let cart = JSON.parse(localStorage.getItem("lumix_cart")) || [];
+
+    cart.splice(index, 1);
+
+    localStorage.setItem("lumix_cart", JSON.stringify(cart));
+
+    renderCart();
+
+    if (typeof updateCartBadge === "function") {
+        updateCartBadge();
+    }
+}
+
+function checkout() {
+
+    let cart = JSON.parse(localStorage.getItem("lumix_cart")) || [];
+
+    if (cart.length === 0) {
+        alert("Giỏ hàng đang trống!");
+        return;
+    }
+
+    let fullname = document.getElementById("fullname").value.trim();
+    let birthday = document.getElementById("birthday").value;
+    let email = document.getElementById("email").value.trim();
+    let cccd = document.getElementById("cccd").value.trim();
+    let address = document.getElementById("address").value.trim();
+
+    if (
+        fullname === "" ||
+        birthday === "" ||
+        email === "" ||
+        cccd === "" ||
+        address === ""
+    ) {
+        alert("Vui lòng nhập đầy đủ thông tin!");
+        return;
+    }
+
+    alert(
+        "Đặt hàng thành công!\n\n" +
+        "Khách hàng: " + fullname +
+        "\nEmail: " + email +
+        "\nĐịa chỉ: " + address
+    );
+
+    localStorage.removeItem("lumix_cart");
+
+    document.getElementById("fullname").value = "";
+    document.getElementById("birthday").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("cccd").value = "";
+    document.getElementById("address").value = "";
+
+    renderCart();
+
+    if (typeof updateCartBadge === "function") {
+        updateCartBadge();
+    }
+}
+
+window.onload = function() {
+
+    renderCart();
+
+    if (typeof updateCartBadge === "function") {
+        updateCartBadge();
+    }
+};
+
+</script>
+
+</body>
+</html>
