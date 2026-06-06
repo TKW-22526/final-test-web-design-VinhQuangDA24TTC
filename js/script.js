@@ -59,7 +59,8 @@ const productlist = [
     price: "89.990.000 VNĐ",
     oldPrice: "99.000.000 VNĐ",
     image: "../assets/images/S1R.jpg", 
-    productLink: "chi-tiet.html", system: "fullframe",
+    productLink: "chi-tiet.html",
+    cat: "camera", system: "fullframe",
     desc: "Panasonic Lumix S1R là chiếc máy ảnh mirrorless full-frame cao cấp được thiết kế dành cho các nhiếp ảnh gia chuyên nghiệp yêu cầu độ phân giải cực cao và chất lượng hình ảnh hàng đầu. Trang bị cảm biến CMOS Full-frame 47.3MP cùng bộ xử lý Venus Engine mạnh mẽ, máy mang lại độ chi tiết vượt trội, màu sắc chính xác và dải tương phản rộng, đáp ứng xuất sắc các nhu cầu chụp ảnh phong cảnh, chân dung, quảng cáo và thương mại. Hệ thống chống rung 5 trục trong thân máy kết hợp công nghệ Dual I.S. 2 giúp giảm rung hiệu quả khi chụp ảnh ở tốc độ màn trập thấp. Lumix S1R còn sở hữu chế độ High Resolution Mode cho phép tạo ra những bức ảnh có độ phân giải siêu cao lên đến 187MP, mang lại khả năng tái tạo chi tiết ấn tượng cho các tác vụ chuyên nghiệp. Thân máy được chế tạo từ hợp kim magie chắc chắn với khả năng chống bụi, chống ẩm và hoạt động ổn định trong điều kiện thời tiết khắc nghiệt. Kính ngắm điện tử OLED độ phân giải cực cao cùng màn hình cảm ứng linh hoạt giúp nâng cao trải nghiệm sử dụng và khả năng kiểm soát hình ảnh. Bên cạnh khả năng chụp ảnh xuất sắc, máy vẫn hỗ trợ quay video 4K chất lượng cao, đáp ứng nhu cầu sáng tạo đa dạng. Với độ phân giải hàng đầu, chất lượng hoàn thiện cao cấp và hiệu năng mạnh mẽ, Panasonic Lumix S1R là lựa chọn lý tưởng cho những nhiếp ảnh gia chuyên nghiệp đang tìm kiếm một chiếc máy ảnh full-frame có khả năng tái tạo chi tiết ở mức cao nhất."
   },
   {
@@ -244,6 +245,180 @@ const productlist = [
     cat: "lens", system: "fullframe",
     desc: "Panasonic Lumix S PRO 16-35mm F4 là ống kính zoom góc siêu rộng cao cấp thuộc dòng S PRO dành cho hệ máy ảnh full-frame ngàm L. Với dải tiêu cự linh hoạt từ 16-35mm cùng khẩu độ cố định f/4 trên toàn dải zoom, ống kính đáp ứng xuất sắc nhu cầu chụp phong cảnh, kiến trúc, nội thất, du lịch và quay video chuyên nghiệp. Hệ thống quang học gồm 12 thấu kính trong 9 nhóm, tích hợp các thấu kính phi cầu, ED và UHR giúp giảm thiểu quang sai, méo hình và hiện tượng viền tím, mang lại độ sắc nét cao trên toàn khung hình. Khoảng cách lấy nét tối thiểu chỉ 25cm cho phép người dùng dễ dàng sáng tạo với các góc chụp cận cảnh độc đáo. Hệ thống lấy nét tự động sử dụng động cơ tuyến tính kép hoạt động nhanh chóng, chính xác và gần như không phát ra tiếng ồn, đặc biệt phù hợp cho nhu cầu quay video. Với trọng lượng chỉ khoảng 500g cùng đường kính filter tiêu chuẩn 77mm, Lumix S PRO 16-35mm F4 mang lại sự cân bằng lý tưởng giữa chất lượng quang học và tính cơ động khi sử dụng ngoài thực địa. Thân ống kính được hoàn thiện chắc chắn với khả năng chống bụi, chống ẩm và hoạt động ổn định ở nhiệt độ thấp, đáp ứng tốt các điều kiện tác nghiệp khắc nghiệt. Nhờ chất lượng hình ảnh vượt trội, độ sắc nét cao và khả năng tái tạo màu sắc đặc trưng của dòng S PRO, Lumix S PRO 16-35mm F4 là lựa chọn lý tưởng cho những nhiếp ảnh gia và nhà làm phim đang tìm kiếm một ống kính góc siêu rộng chuyên nghiệp, linh hoạt và đáng tin cậy."
   },
+
+    {
+    id: 25,
+    name: "Panasonic Lumix S 20-60mm F3.5-5.6",
+    price: "15.990.000 VNĐ",
+    oldPrice: "17.990.000 VNĐ",
+    image: "../assets/images/2060.jpg", 
+    productLink: "chi-tiet.html",
+    cat: "lens", system: "fullframe",
+    desc: "Panasonic Lumix S 20-60mm F3.5-5.6 là ống kính zoom tiêu chuẩn nhỏ gọn dành cho hệ máy ảnh full-frame ngàm L, được thiết kế để mang lại sự linh hoạt tối đa cho nhu cầu chụp ảnh và quay video hằng ngày. Với dải tiêu cự độc đáo từ 20mm đến 60mm, ống kính cung cấp góc nhìn rộng hơn đáng kể so với các ống kính kit truyền thống, rất phù hợp cho phong cảnh, kiến trúc, du lịch, đường phố và sáng tạo nội dung. Hệ thống quang học tiên tiến sử dụng nhiều thấu kính phi cầu và ED giúp giảm quang sai, tăng độ sắc nét và duy trì chất lượng hình ảnh cao trên toàn dải zoom. Khoảng cách lấy nét gần chỉ 15cm ở góc rộng cho phép chụp cận cảnh ấn tượng với khả năng tái tạo chi tiết tốt. Hệ thống lấy nét tự động hoạt động nhanh chóng, chính xác và gần như không gây tiếng ồn, đáp ứng hiệu quả cả nhu cầu chụp ảnh lẫn quay video. Với trọng lượng chỉ khoảng 350g, Lumix S 20-60mm F3.5-5.6 mang lại tính cơ động cao, phù hợp cho các chuyến đi và sử dụng hàng ngày. Thân ống kính được thiết kế chống bụi, chống ẩm và hoạt động ổn định trong điều kiện thời tiết khắc nghiệt, đảm bảo độ bền và độ tin cậy lâu dài. Với chất lượng quang học tốt, thiết kế nhỏ gọn và dải tiêu cự linh hoạt, Panasonic Lumix S 20-60mm F3.5-5.6 là lựa chọn lý tưởng cho những người dùng hệ Lumix S đang tìm kiếm một ống kính đa năng để đồng hành trong mọi hành trình sáng tạo."
+  },
+
+  {
+    id: 26,
+    name: "Panasonic Lumix S PRO 14mm F1.8",
+    price: "37.490.000 VNĐ",
+    oldPrice: "40.490.000 VNĐ",
+    image: "../assets/images/14.jpg", 
+    productLink: "chi-tiet.html",
+    cat: "lens", system: "fullframe",
+    desc: "Panasonic Lumix S PRO 14mm F1.8 là ống kính prime góc siêu rộng cao cấp dành cho hệ máy ảnh full-frame ngàm L, được thiết kế để đáp ứng nhu cầu của các nhiếp ảnh gia phong cảnh, thiên văn, kiến trúc và nhà làm phim chuyên nghiệp. Với tiêu cự 14mm cùng khẩu độ lớn F1.8, ống kính mang lại góc nhìn cực rộng, khả năng thu sáng vượt trội và hiệu ứng phối cảnh ấn tượng, đặc biệt phù hợp cho chụp bầu trời đêm, phong cảnh rộng lớn và các không gian nội thất. Hệ thống quang học tiên tiến sử dụng nhiều thấu kính phi cầu, ED và UED giúp giảm méo hình, quang sai màu và hiện tượng lóe sáng, đồng thời duy trì độ sắc nét cao trên toàn khung hình ngay cả khi sử dụng ở khẩu độ tối đa. Hệ thống lấy nét tự động hoạt động nhanh chóng, chính xác và gần như không gây tiếng ồn, đáp ứng tốt cả nhu cầu chụp ảnh lẫn quay video chuyên nghiệp. Với trọng lượng nhẹ và thiết kế nhỏ gọn hơn nhiều so với các ống kính góc siêu rộng khẩu lớn truyền thống, Lumix S PRO 14mm F1.8 mang lại tính cơ động cao mà vẫn đảm bảo chất lượng quang học hàng đầu. Thân ống kính được chế tạo chắc chắn với khả năng chống bụi, chống ẩm và hoạt động ổn định trong điều kiện thời tiết khắc nghiệt. Với độ sắc nét vượt trội, khẩu độ F1.8 lớn và góc nhìn siêu rộng ấn tượng, Panasonic Lumix S PRO 14mm F1.8 là lựa chọn lý tưởng cho những người sáng tạo đang tìm kiếm một ống kính chuyên nghiệp để ghi lại những khung hình rộng lớn với chất lượng hình ảnh xuất sắc."
+  },
+    {
+    id: 27,
+    name: "Panasonic Lumix S PRO 70-200mm F2.8 O.I.S",
+    price: "64.590.000 VNĐ",
+    oldPrice: "65.590.000 VNĐ",
+    image: "../assets/images/70200.jpg", 
+    productLink: "chi-tiet.html",
+    cat: "lens", system: "fullframe",
+    desc: "Panasonic Lumix S PRO 70-200mm F2.8 O.I.S là ống kính tele zoom chuyên nghiệp cao cấp dành cho hệ máy ảnh full-frame ngàm L, được thiết kế để đáp ứng những yêu cầu khắt khe nhất trong lĩnh vực nhiếp ảnh thể thao, chân dung, sự kiện, động vật hoang dã và quay video chuyên nghiệp. Với dải tiêu cự linh hoạt 70-200mm cùng khẩu độ lớn F2.8 cố định trên toàn dải zoom, ống kính mang lại khả năng thu sáng vượt trội, hiệu ứng xóa phông mượt mà và hiệu suất ổn định trong mọi điều kiện ánh sáng. Hệ thống quang học tiên tiến sử dụng nhiều thấu kính phi cầu, UED và ED giúp giảm quang sai, tăng độ sắc nét và duy trì chất lượng hình ảnh xuất sắc từ trung tâm đến rìa khung hình. Công nghệ chống rung quang học O.I.S kết hợp với hệ thống chống rung trong thân máy Lumix giúp giảm rung hiệu quả khi chụp ảnh và quay video ở tiêu cự dài. Hệ thống lấy nét tự động sử dụng động cơ tuyến tính kép hoạt động nhanh chóng, chính xác và gần như không phát ra tiếng ồn, phù hợp cho cả nhiếp ảnh và quay phim chuyên nghiệp. Thân ống kính được chế tạo chắc chắn với khả năng chống bụi, chống ẩm và chống đóng băng, đảm bảo độ bền cao trong những môi trường tác nghiệp khắc nghiệt. Với chất lượng quang học đạt chuẩn S PRO, khẩu độ F2.8 lớn và độ hoàn thiện cao cấp, Panasonic Lumix S PRO 70-200mm F2.8 O.I.S là lựa chọn lý tưởng cho những người dùng chuyên nghiệp đang tìm kiếm một ống kính tele zoom mạnh mẽ và đáng tin cậy."
+  },
+{
+    id: 28,
+    name: "Panasonic Lumix S 70-300mm F4.5-5.6 Macro O.I.S",
+    price: "26.900.000 VNĐ",
+    oldPrice: "28.900.000 VNĐ",
+    image: "../assets/images/70300.jpg", 
+    productLink: "chi-tiet.html",
+    cat: "lens", system: "fullframe",
+    desc: "Panasonic Lumix S 70-300mm F4.5-5.6 Macro O.I.S là ống kính tele zoom đa dụng dành cho hệ máy ảnh full-frame ngàm L, được thiết kế để phục vụ nhiều thể loại nhiếp ảnh như động vật hoang dã, thể thao, chân dung, du lịch và quay video. Với dải tiêu cự linh hoạt từ 70mm đến 300mm, ống kính cho phép người dùng dễ dàng tiếp cận các chủ thể ở khoảng cách xa mà vẫn duy trì chất lượng hình ảnh sắc nét và độ chi tiết cao. Hệ thống quang học tiên tiến sử dụng các thấu kính ED và UED giúp giảm quang sai màu, tăng độ tương phản và tái tạo màu sắc trung thực trên toàn dải zoom. Điểm nổi bật của ống kính là khả năng chụp macro với độ phóng đại tối đa 0.5x, cho phép ghi lại các chi tiết cận cảnh ấn tượng mà không cần sử dụng ống kính macro chuyên dụng. Công nghệ chống rung quang học O.I.S kết hợp với hệ thống chống rung trong thân máy Lumix giúp giảm rung hiệu quả khi chụp ở tiêu cự dài hoặc quay video cầm tay. Hệ thống lấy nét tự động hoạt động nhanh chóng, chính xác và gần như không gây tiếng ồn, đáp ứng tốt cả nhu cầu chụp ảnh lẫn ghi hình. Thân ống kính được thiết kế chống bụi, chống ẩm và hoạt động ổn định trong điều kiện thời tiết khắc nghiệt, mang lại độ bền và độ tin cậy cao. Với sự kết hợp giữa khả năng zoom xa, chức năng macro tiện lợi và thiết kế gọn nhẹ, Panasonic Lumix S 70-300mm F4.5-5.6 Macro O.I.S là lựa chọn lý tưởng cho những người dùng hệ Lumix S đang tìm kiếm một ống kính tele đa năng và linh hoạt."
+  },
+  {
+    id: 29,
+    name: "Panasonic Lumix S PRO 24-70mm F2.8",
+    price: "52.990.000 VNĐ",
+    oldPrice: "56.990.000 VNĐ",
+    image: "../assets/images/2470.jpg",
+    productLink: "chi-tiet.html",
+    cat: "lens",
+    system: "fullframe",
+    desc: "Panasonic Lumix S PRO 24-70mm F2.8 là ống kính zoom tiêu chuẩn chuyên nghiệp cao cấp dành cho hệ máy ảnh full-frame ngàm L, được thiết kế để đáp ứng những yêu cầu khắt khe nhất của các nhiếp ảnh gia và nhà làm phim chuyên nghiệp. Với dải tiêu cự linh hoạt từ 24mm đến 70mm cùng khẩu độ lớn F2.8 cố định trên toàn dải zoom, ống kính mang lại khả năng thu sáng vượt trội, hiệu ứng xóa phông đẹp mắt và hiệu suất ổn định trong nhiều điều kiện ánh sáng khác nhau. Hệ thống quang học đạt tiêu chuẩn nghiêm ngặt của dòng S PRO, sử dụng nhiều thấu kính phi cầu, UHR và ED giúp giảm quang sai, tăng độ sắc nét và duy trì chất lượng hình ảnh xuất sắc trên toàn khung hình. Hệ thống lấy nét tự động sử dụng động cơ tuyến tính kép hoạt động nhanh chóng, chính xác và gần như không phát ra tiếng ồn, đáp ứng hiệu quả cả nhu cầu chụp ảnh lẫn quay video. Thiết kế lấy nét trong giúp duy trì sự cân bằng khi sử dụng trên gimbal và các hệ thống hỗ trợ quay phim chuyên nghiệp. Thân ống kính được chế tạo chắc chắn với khả năng chống bụi, chống ẩm và chống đóng băng, đảm bảo độ bền cao trong những môi trường tác nghiệp khắc nghiệt. Với chất lượng quang học hàng đầu, khẩu độ F2.8 lớn và dải tiêu cự đa dụng, Panasonic Lumix S PRO 24-70mm F2.8 được xem là một trong những ống kính quan trọng nhất trong hệ sinh thái Lumix S, phù hợp cho các thể loại nhiếp ảnh từ chân dung, sự kiện, du lịch đến sản xuất nội dung và quay phim chuyên nghiệp."
+},
+{
+    id: 30,
+    name: "Panasonic Lumix S PRO 50mm F1.4",
+    price: "49.990.000 VNĐ",
+    oldPrice: "53.990.000 VNĐ",
+    image: "../assets/images/50f14.jpg",
+    productLink: "chi-tiet.html",
+    cat: "lens",
+    system: "fullframe",
+    desc: "Panasonic Lumix S PRO 50mm F1.4 là ống kính prime cao cấp thuộc dòng S PRO dành cho hệ máy ảnh full-frame ngàm L, được thiết kế để mang lại chất lượng hình ảnh ở mức cao nhất cho các nhiếp ảnh gia và nhà làm phim chuyên nghiệp. Với tiêu cự tiêu chuẩn 50mm kết hợp khẩu độ cực lớn F1.4, ống kính tạo ra góc nhìn tự nhiên gần với mắt người, đồng thời mang lại khả năng thu sáng vượt trội và hiệu ứng bokeh mềm mại, giàu chiều sâu. Hệ thống quang học tiên tiến sử dụng nhiều thấu kính phi cầu và thấu kính có độ khúc xạ cao giúp giảm quang sai, tăng độ sắc nét và duy trì chất lượng hình ảnh xuất sắc ngay cả khi sử dụng ở khẩu độ lớn nhất. Ống kính tái tạo màu sắc trung thực, độ tương phản cao và khả năng chuyển vùng nét sang vùng mờ mượt mà, rất phù hợp cho chụp chân dung, thời trang, đám cưới, quảng cáo và quay phim chuyên nghiệp. Hệ thống lấy nét tự động sử dụng động cơ tuyến tính hoạt động nhanh chóng, chính xác và gần như không gây tiếng ồn, đáp ứng tốt cả nhu cầu chụp ảnh lẫn ghi hình. Thân ống kính được chế tạo chắc chắn với khả năng chống bụi, chống ẩm và chống đóng băng, đảm bảo độ bền cao trong nhiều điều kiện tác nghiệp khác nhau. Với chất lượng quang học đạt chuẩn khắt khe của dòng S PRO, khẩu độ F1.4 lớn và khả năng tái tạo hình ảnh đẳng cấp, Panasonic Lumix S PRO 50mm F1.4 là lựa chọn lý tưởng cho những người dùng chuyên nghiệp đang tìm kiếm một ống kính tiêu chuẩn hàng đầu cho hệ Lumix S."
+},
+{
+    id: 31,
+    name: "Panasonic Lumix S 85mm F1.8",
+    price: "15.990.000 VNĐ",
+    oldPrice: "17.990.000 VNĐ",
+    image: "../assets/images/85.jpg",
+    productLink: "chi-tiet.html",
+    cat: "lens",
+    system: "fullframe",
+    desc: "Panasonic Lumix S 85mm F1.8 là ống kính prime tele ngắn dành cho hệ máy ảnh full-frame ngàm L, được thiết kế để mang lại chất lượng hình ảnh cao cấp trong một thân hình nhỏ gọn và linh hoạt. Với tiêu cự 85mm cùng khẩu độ lớn F1.8, ống kính tạo ra hiệu ứng xóa phông mềm mại, khả năng tách chủ thể ấn tượng và góc nhìn lý tưởng cho nhiếp ảnh chân dung, thời trang, sự kiện và quay video chuyên nghiệp. Hệ thống quang học tiên tiến sử dụng nhiều thấu kính đặc biệt giúp giảm quang sai màu, tăng độ sắc nét và duy trì chất lượng hình ảnh đồng đều từ trung tâm đến rìa khung hình. Khẩu độ F1.8 cho phép thu sáng hiệu quả trong điều kiện ánh sáng yếu, đồng thời tạo nên những bức ảnh có chiều sâu và cảm xúc hơn. Hệ thống lấy nét tự động sử dụng động cơ tuyến tính hoạt động nhanh chóng, chính xác và gần như không phát ra tiếng ồn, rất phù hợp cho cả chụp ảnh và quay phim. Thiết kế lấy nét trong giúp duy trì kích thước ổn định khi sử dụng trên gimbal hoặc các hệ thống hỗ trợ quay video. Thân ống kính được hoàn thiện chắc chắn với khả năng chống bụi, chống ẩm và hoạt động ổn định trong điều kiện thời tiết khắc nghiệt. Với chất lượng quang học vượt trội, trọng lượng nhẹ và khả năng tái tạo hậu cảnh đẹp mắt, Panasonic Lumix S 85mm F1.8 là lựa chọn lý tưởng cho những người dùng hệ Lumix S đang tìm kiếm một ống kính chân dung chuyên nghiệp, nhỏ gọn và đáng tin cậy."
+},
+{
+    id: 32,
+    name: "Panasonic Lumix S 35mm F1.8",
+    price: "15.990.000 VNĐ",
+    oldPrice: "17.990.000 VNĐ",
+    image: "../assets/images/35.jpg",
+    productLink: "chi-tiet.html",
+    cat: "lens",
+    system: "fullframe",
+    desc: "Panasonic Lumix S 35mm F1.8 là ống kính prime góc rộng tiêu chuẩn dành cho hệ máy ảnh full-frame ngàm L, được thiết kế để mang lại sự cân bằng hoàn hảo giữa chất lượng hình ảnh, tính linh hoạt và kích thước nhỏ gọn. Với tiêu cự 35mm cùng khẩu độ lớn F1.8, ống kính phù hợp cho nhiều thể loại nhiếp ảnh như đường phố, du lịch, đời thường, chân dung môi trường và quay video sáng tạo. Khẩu độ F1.8 cho phép thu sáng hiệu quả trong điều kiện ánh sáng yếu, đồng thời tạo hiệu ứng xóa phông tự nhiên và khả năng tách chủ thể ấn tượng. Hệ thống quang học tiên tiến sử dụng nhiều thấu kính đặc biệt giúp giảm quang sai, tăng độ sắc nét và duy trì chất lượng hình ảnh cao trên toàn khung hình. Hệ thống lấy nét tự động sử dụng động cơ tuyến tính hoạt động nhanh chóng, chính xác và gần như không phát ra tiếng ồn, đáp ứng tốt cả nhu cầu chụp ảnh lẫn quay phim chuyên nghiệp. Thiết kế lấy nét trong giúp hạn chế hiện tượng focus breathing, mang lại trải nghiệm quay video mượt mà hơn. Thân ống kính được chế tạo chắc chắn với khả năng chống bụi, chống ẩm và hoạt động ổn định trong điều kiện thời tiết khắc nghiệt. Với chất lượng quang học xuất sắc, trọng lượng nhẹ và khả năng sử dụng linh hoạt trong nhiều tình huống khác nhau, Panasonic Lumix S 35mm F1.8 là lựa chọn lý tưởng cho những người dùng hệ Lumix S đang tìm kiếm một ống kính prime đa năng phục vụ cả nhiếp ảnh và quay video chuyên nghiệp."
+},
+{
+    id: 33,
+    name: "Panasonic Lumix S 24mm F1.8",
+    price: "15.990.000 VNĐ",
+    oldPrice: "17.990.000 VNĐ",
+    image: "../assets/images/24.jpg",
+    productLink: "chi-tiet.html",
+    cat: "lens",
+    system: "fullframe",
+    desc: "Panasonic Lumix S 24mm F1.8 là ống kính prime góc rộng cao cấp dành cho hệ máy ảnh full-frame ngàm L, được thiết kế để đáp ứng nhu cầu của các nhiếp ảnh gia và nhà sáng tạo nội dung yêu thích sự linh hoạt và chất lượng hình ảnh vượt trội. Với tiêu cự 24mm cùng khẩu độ lớn F1.8, ống kính mang lại góc nhìn rộng lý tưởng cho nhiếp ảnh phong cảnh, kiến trúc, du lịch, đường phố và quay video chuyên nghiệp. Khẩu độ F1.8 cho khả năng thu sáng hiệu quả trong điều kiện ánh sáng yếu, đồng thời tạo hiệu ứng xóa phông tự nhiên và tăng khả năng tách chủ thể khi chụp ở khoảng cách gần. Hệ thống quang học tiên tiến sử dụng nhiều thấu kính đặc biệt giúp giảm quang sai, hạn chế hiện tượng méo hình và duy trì độ sắc nét cao trên toàn khung hình. Hệ thống lấy nét tự động sử dụng động cơ tuyến tính hoạt động nhanh chóng, chính xác và gần như không gây tiếng ồn, rất phù hợp cho cả chụp ảnh và quay phim. Thiết kế lấy nét trong giúp giảm hiện tượng focus breathing, mang lại chuyển động khung hình tự nhiên hơn khi quay video. Thân ống kính được chế tạo chắc chắn với khả năng chống bụi, chống ẩm và hoạt động ổn định trong điều kiện thời tiết khắc nghiệt. Với chất lượng quang học xuất sắc, trọng lượng nhẹ và khả năng sử dụng linh hoạt trong nhiều tình huống khác nhau, Panasonic Lumix S 24mm F1.8 là lựa chọn lý tưởng cho những người dùng hệ Lumix S đang tìm kiếm một ống kính góc rộng chuyên nghiệp phục vụ cả nhiếp ảnh và sáng tạo nội dung hiện đại."
+},
+{
+    id: 34,
+    name: "Panasonic Lumix S 100mm F2.8 Macro",
+    price: "24.990.000 VNĐ",
+    oldPrice: "27.990.000 VNĐ",
+    image: "../assets/images/100macro.jpg",
+    productLink: "chi-tiet.html",
+    cat: "lens",
+    system: "fullframe",
+    desc: "Panasonic Lumix S 100mm F2.8 Macro là ống kính macro cao cấp dành cho hệ máy ảnh full-frame ngàm L, được thiết kế để mang lại khả năng chụp cận cảnh chuyên nghiệp trong một thân hình nhỏ gọn và nhẹ nhàng. Với tiêu cự 100mm cùng khẩu độ F2.8, ống kính cho phép ghi lại những chi tiết cực nhỏ với độ sắc nét cao, đồng thời tạo hiệu ứng xóa phông mềm mại và khả năng tách chủ thể ấn tượng. Khả năng phóng đại 1:1 thực thụ giúp tái hiện chính xác kích thước của chủ thể trên cảm biến, rất phù hợp cho nhiếp ảnh macro, sản phẩm, thiên nhiên, côn trùng và chân dung. Hệ thống quang học tiên tiến sử dụng nhiều thấu kính đặc biệt giúp giảm quang sai màu, tăng độ tương phản và duy trì chất lượng hình ảnh xuất sắc từ trung tâm đến rìa khung hình. Hệ thống lấy nét tự động hoạt động nhanh chóng, chính xác và êm ái, đồng thời được trang bị công tắc giới hạn khoảng lấy nét giúp tăng tốc độ lấy nét trong từng tình huống cụ thể. Thiết kế lấy nét trong giúp chiều dài ống kính không thay đổi khi lấy nét, tạo sự thuận tiện khi chụp ở khoảng cách gần hoặc sử dụng trên gimbal. Thân ống kính được hoàn thiện chắc chắn với khả năng chống bụi, chống ẩm và hoạt động ổn định trong điều kiện thời tiết khắc nghiệt. Với chất lượng quang học vượt trội, khả năng macro 1:1 chuyên nghiệp và thiết kế nhỏ gọn hàng đầu phân khúc, Panasonic Lumix S 100mm F2.8 Macro là lựa chọn lý tưởng cho những người dùng hệ Lumix S muốn khám phá thế giới vi mô hoặc tạo ra những bức ảnh chân dung giàu chiều sâu và cảm xúc."
+},
+{
+    id: 35,
+    name: "Panasonic Leica 9mm F1.7",
+    price: "12.990.000 VNĐ",
+    oldPrice: "14.990.000 VNĐ",
+    image: "../assets/images/9mm.jpg",
+    productLink: "chi-tiet.html",
+    cat: "lens",
+    system: "m43",
+    desc: "Panasonic Leica DG Summilux 9mm F1.7 ASPH là ống kính prime góc siêu rộng cao cấp dành cho hệ máy ảnh Micro Four Thirds, được phát triển với sự hợp tác giữa Panasonic và Leica nhằm mang lại chất lượng quang học vượt trội trong một thiết kế nhỏ gọn và linh hoạt. Với tiêu cự tương đương 18mm trên full-frame cùng khẩu độ lớn F1.7, ống kính mang đến góc nhìn rộng ấn tượng, khả năng thu sáng mạnh mẽ và hiệu ứng phối cảnh độc đáo, rất phù hợp cho nhiếp ảnh phong cảnh, kiến trúc, du lịch, vlog và quay video sáng tạo. Hệ thống quang học tiên tiến sử dụng các thấu kính phi cầu và thấu kính đặc biệt giúp giảm méo hình, hạn chế quang sai màu và duy trì độ sắc nét cao trên toàn khung hình. Khoảng cách lấy nét tối thiểu chỉ 9.5cm cho phép người dùng chụp cận cảnh với hiệu ứng phối cảnh mạnh mẽ và khả năng tách chủ thể ấn tượng. Hệ thống lấy nét tự động hoạt động nhanh chóng, chính xác và gần như không phát ra tiếng ồn, đáp ứng tốt cho cả chụp ảnh lẫn quay phim. Thiết kế lấy nét trong giúp hạn chế hiện tượng focus breathing, mang lại trải nghiệm quay video mượt mà và chuyên nghiệp hơn. Thân ống kính được chế tạo chắc chắn với khả năng chống bụi, chống ẩm và hoạt động ổn định trong điều kiện thời tiết khắc nghiệt. Với chất lượng quang học chuẩn Leica, khẩu độ F1.7 lớn và thiết kế nhỏ gọn đặc trưng của hệ Micro Four Thirds, Panasonic Leica DG Summilux 9mm F1.7 ASPH là lựa chọn lý tưởng cho những người sáng tạo nội dung và nhiếp ảnh gia đang tìm kiếm một ống kính góc siêu rộng chất lượng cao để đồng hành trong mọi hành trình sáng tạo."
+},
+{
+    id: 36,
+    name: "Panasonic Leica 15mm F1.7",
+    price: "10.990.000 VNĐ",
+    oldPrice: "12.990.000 VNĐ",
+    image: "../assets/images/15mm.jpg",
+    productLink: "chi-tiet.html",
+    cat: "lens",
+    system: "m43",
+    desc: "Panasonic Leica DG Summilux 15mm F1.7 ASPH là ống kính prime góc rộng cao cấp dành cho hệ máy ảnh Micro Four Thirds, được phát triển với sự hợp tác giữa Panasonic và Leica nhằm mang lại chất lượng hình ảnh xuất sắc trong một thiết kế nhỏ gọn và tinh tế. Với tiêu cự tương đương 30mm trên full-frame cùng khẩu độ lớn F1.7, ống kính mang đến góc nhìn linh hoạt, phù hợp cho nhiều thể loại nhiếp ảnh như đường phố, du lịch, phong cảnh, đời thường và sáng tạo nội dung. Khẩu độ F1.7 cho khả năng thu sáng hiệu quả trong điều kiện ánh sáng yếu, đồng thời tạo hiệu ứng xóa phông tự nhiên và tăng khả năng tách chủ thể. Hệ thống quang học tiên tiến sử dụng các thấu kính phi cầu chất lượng cao giúp giảm quang sai, tăng độ sắc nét và duy trì chất lượng hình ảnh đồng đều trên toàn khung hình. Hệ thống lấy nét tự động hoạt động nhanh chóng, chính xác và gần như không phát ra tiếng ồn, đáp ứng tốt cho cả nhu cầu chụp ảnh và quay video. Điểm nổi bật của ống kính là vòng chỉnh khẩu độ vật lý trên thân ống, mang lại trải nghiệm điều khiển trực quan theo phong cách nhiếp ảnh cổ điển. Với trọng lượng nhẹ và kích thước nhỏ gọn, Panasonic Leica DG Summilux 15mm F1.7 ASPH là người bạn đồng hành lý tưởng cho những ai yêu thích sự cơ động mà vẫn yêu cầu chất lượng quang học cao cấp. Thân ống kính được hoàn thiện chắc chắn với thiết kế sang trọng đặc trưng của Leica, mang đến sự kết hợp hoàn hảo giữa hiệu năng, tính thẩm mỹ và trải nghiệm sử dụng chuyên nghiệp."
+},
+{
+    id: 37,
+    name: "Panasonic Leica 42.5mm F1.2 Nocticron",
+    price: "33.990.000 VNĐ",
+    oldPrice: "36.990.000 VNĐ",
+    image: "../assets/images/425.jpg",
+    productLink: "chi-tiet.html",
+    cat: "lens",
+    system: "m43",
+    desc: "Panasonic Leica DG Nocticron 42.5mm F1.2 ASPH. POWER O.I.S là ống kính chân dung cao cấp hàng đầu dành cho hệ máy ảnh Micro Four Thirds, được phát triển với sự hợp tác giữa Panasonic và Leica nhằm mang lại chất lượng quang học đỉnh cao và khả năng tái tạo hình ảnh giàu cảm xúc. Với tiêu cự tương đương 85mm trên full-frame cùng khẩu độ cực lớn F1.2, ống kính tạo ra hiệu ứng xóa phông mềm mại, khả năng tách chủ thể xuất sắc và độ sâu trường ảnh ấn tượng, đặc biệt phù hợp cho nhiếp ảnh chân dung, thời trang, đám cưới và nghệ thuật. Hệ thống quang học tiên tiến sử dụng các thấu kính phi cầu, ED và UHR giúp giảm quang sai, tăng độ sắc nét và duy trì chất lượng hình ảnh vượt trội ngay cả khi chụp ở khẩu độ tối đa. Khẩu độ F1.2 không chỉ hỗ trợ chụp trong điều kiện thiếu sáng mà còn tạo nên hiệu ứng bokeh mượt mà đặc trưng của dòng Nocticron. Công nghệ chống rung quang học POWER O.I.S giúp giảm rung hiệu quả khi chụp cầm tay, đặc biệt hữu ích trong môi trường ánh sáng yếu. Hệ thống lấy nét tự động hoạt động nhanh chóng, chính xác và êm ái, đáp ứng tốt cho cả chụp ảnh và quay video. Ống kính còn được trang bị vòng chỉnh khẩu độ vật lý mang lại trải nghiệm điều khiển trực quan và chuyên nghiệp. Với chất lượng quang học chuẩn Leica, độ sắc nét xuất sắc, bokeh đẹp mắt và khả năng tái tạo hình ảnh giàu chiều sâu, Panasonic Leica DG Nocticron 42.5mm F1.2 ASPH. POWER O.I.S được xem là một trong những ống kính chân dung tốt nhất từng được phát triển cho hệ Micro Four Thirds."
+},
+{
+    id: 38,
+    name: "Panasonic Leica 10-25mm F1.7",
+    price: "44.990.000 VNĐ",
+    oldPrice: "47.990.000 VNĐ",
+    image: "../assets/images/1025.jpg",
+    productLink: "chi-tiet.html",
+    cat: "lens",
+    system: "m43",
+    desc: "Panasonic Leica DG Vario-Summilux 10-25mm F1.7 ASPH là ống kính zoom khẩu độ lớn cao cấp dành cho hệ máy ảnh Micro Four Thirds, được phát triển với sự hợp tác giữa Panasonic và Leica nhằm mang lại chất lượng hình ảnh tiệm cận các ống kính prime chuyên nghiệp. Với dải tiêu cự tương đương 20-50mm trên full-frame cùng khẩu độ F1.7 cố định trên toàn dải zoom, ống kính cung cấp khả năng thu sáng vượt trội, hiệu ứng xóa phông đẹp mắt và hiệu năng ổn định trong mọi điều kiện ánh sáng. Hệ thống quang học tiên tiến sử dụng nhiều thấu kính phi cầu, UHR và ED giúp giảm quang sai, tăng độ sắc nét và duy trì chất lượng hình ảnh xuất sắc từ trung tâm đến rìa khung hình. Dải tiêu cự linh hoạt giúp ống kính phù hợp cho nhiều thể loại như phong cảnh, đường phố, chân dung môi trường, sự kiện và quay video chuyên nghiệp. Hệ thống lấy nét tự động hoạt động nhanh chóng, chính xác và gần như không phát ra tiếng ồn, đồng thời thiết kế hạn chế hiện tượng focus breathing giúp mang lại trải nghiệm quay phim mượt mà hơn. Ống kính được trang bị vòng chỉnh khẩu độ vật lý cùng cơ chế chuyển đổi khẩu độ không khấc, đáp ứng nhu cầu làm phim chuyên nghiệp. Thân ống kính được hoàn thiện chắc chắn với khả năng chống bụi, chống ẩm và chống đóng băng, đảm bảo độ bền cao trong các môi trường tác nghiệp khắc nghiệt. Với chất lượng quang học chuẩn Leica, khẩu độ F1.7 cố định độc đáo và khả năng thay thế nhiều ống kính prime trong một thiết bị duy nhất, Panasonic Leica DG Vario-Summilux 10-25mm F1.7 ASPH được xem là một trong những ống kính zoom xuất sắc nhất từng được phát triển cho hệ Micro Four Thirds."
+},
+{
+    id: 39,
+    name: "Panasonic Leica 25-50mm F1.7",
+    price: "42.990.000 VNĐ",
+    oldPrice: "45.990.000 VNĐ",
+    image: "../assets/images/2550.jpg",
+    productLink: "chi-tiet.html",
+    cat: "lens",
+    system: "m43",
+    desc: "Panasonic Leica DG Vario-Summilux 25-50mm F1.7 ASPH là ống kính zoom khẩu độ lớn cao cấp dành cho hệ máy ảnh Micro Four Thirds, được phát triển với sự hợp tác giữa Panasonic và Leica nhằm mang lại chất lượng hình ảnh ngang tầm các ống kính prime chuyên nghiệp. Với dải tiêu cự tương đương 50-100mm trên full-frame cùng khẩu độ F1.7 cố định trên toàn dải zoom, ống kính cung cấp khả năng thu sáng vượt trội, hiệu ứng xóa phông mềm mại và độ sâu trường ảnh ấn tượng. Dải tiêu cự này đặc biệt phù hợp cho chân dung, sự kiện, phỏng vấn, quay phim thương mại và sáng tạo nội dung chuyên nghiệp. Hệ thống quang học tiên tiến sử dụng nhiều thấu kính phi cầu, UHR và ED giúp giảm quang sai, tăng độ sắc nét và duy trì chất lượng hình ảnh xuất sắc trên toàn khung hình ngay cả ở khẩu độ lớn nhất. Hệ thống lấy nét tự động hoạt động nhanh chóng, chính xác và gần như không phát ra tiếng ồn, đồng thời được tối ưu để hạn chế hiện tượng focus breathing khi quay video. Ống kính còn được trang bị vòng chỉnh khẩu độ vật lý với khả năng chuyển đổi giữa chế độ có khấc và không khấc, đáp ứng nhu cầu làm phim chuyên nghiệp. Thân ống kính được chế tạo chắc chắn với khả năng chống bụi, chống ẩm và chống đóng băng, đảm bảo độ bền cao trong các điều kiện tác nghiệp khắc nghiệt. Khi kết hợp cùng Leica 10-25mm F1.7, người dùng có thể sở hữu bộ đôi zoom F1.7 liên tục tương đương dải tiêu cự 20-100mm trên full-frame, mang lại sự linh hoạt vượt trội mà vẫn duy trì chất lượng quang học hàng đầu. Với hiệu năng xuất sắc, khẩu độ lớn độc đáo và chất lượng hình ảnh chuẩn Leica, Panasonic Leica DG Vario-Summilux 25-50mm F1.7 ASPH là một trong những ống kính zoom cao cấp và ấn tượng nhất dành cho hệ Micro Four Thirds."
+},
+{
+    id: 40,
+    name: "Panasonic Lumix G X 35-100mm F2.8 II",
+    price: "24.990.000 VNĐ",
+    oldPrice: "27.990.000 VNĐ",
+    image: "../assets/images/35100.jpg",
+    productLink: "chi-tiet.html",
+    cat: "lens",
+    system: "m43",
+    desc: "Panasonic Lumix G X Vario 35-100mm F2.8 II POWER O.I.S là ống kính tele zoom chuyên nghiệp cao cấp dành cho hệ máy ảnh Micro Four Thirds, được thiết kế để mang lại hiệu năng mạnh mẽ trong một thân hình nhỏ gọn và cơ động. Với dải tiêu cự tương đương 70-200mm trên full-frame cùng khẩu độ lớn F2.8 cố định trên toàn dải zoom, ống kính đáp ứng xuất sắc các nhu cầu chụp chân dung, thể thao, sự kiện, động vật và quay video chuyên nghiệp. Hệ thống quang học tiên tiến sử dụng nhiều thấu kính ED và UED giúp giảm quang sai màu, tăng độ sắc nét và duy trì chất lượng hình ảnh cao trên toàn khung hình. Công nghệ chống rung quang học POWER O.I.S kết hợp với hệ thống chống rung trong thân máy Lumix thông qua Dual I.S. 2 giúp giảm rung hiệu quả khi chụp ở tiêu cự dài hoặc quay video cầm tay. Hệ thống lấy nét tự động hoạt động nhanh chóng, chính xác và gần như không phát ra tiếng ồn, đáp ứng tốt cho cả nhu cầu nhiếp ảnh và làm phim. Thiết kế lấy nét trong và zoom trong giúp chiều dài ống kính không thay đổi khi sử dụng, tạo sự cân bằng lý tưởng trên gimbal và các hệ thống hỗ trợ quay phim. Thân ống kính được chế tạo chắc chắn với khả năng chống bụi, chống ẩm và chống đóng băng, đảm bảo độ bền cao trong nhiều điều kiện tác nghiệp khác nhau. Với chất lượng quang học xuất sắc, khẩu độ F2.8 cố định và kích thước nhỏ gọn vượt trội so với các ống kính 70-200mm dành cho full-frame, Panasonic Lumix G X Vario 35-100mm F2.8 II POWER O.I.S là lựa chọn lý tưởng cho những người dùng Micro Four Thirds đang tìm kiếm một ống kính tele chuyên nghiệp mạnh mẽ và linh hoạt."
+},
 ];
 
 // ==========================================
@@ -423,8 +598,19 @@ function renderProductDetail() {
     }
 }
 
-// Lắng nghe cấu trúc cây DOM sẵn sàng để khởi chạy toàn cục ổn định
 document.addEventListener("DOMContentLoaded", function() {
     updateCartBadge();
     renderProductDetail();
+
+    const featuredProducts = productlist.slice(0, 8);
+
+    featuredProducts.forEach(function(product) {
+        addproduct(
+            product.id,
+            product.name,
+            product.price,
+            product.image.replace("../", ""),
+            product.productLink
+        );
+    });
 });
