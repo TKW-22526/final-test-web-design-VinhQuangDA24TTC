@@ -2,7 +2,7 @@
 // 1. DANH SÁCH DỮ LIỆU SẢN PHẨM PANASONIC LUMIX
 // ==========================================
 const productlist = [
-  // --- HỆ FULLFRAME (ID: 1 -> 8) ---
+
   {
     id: 1,
     name: "Panasonic Lumix S5 MARK I",
