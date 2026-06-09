@@ -83,14 +83,10 @@
     </div>
 
     <script>
-        // Khi toàn bộ trang HTML nạp xong, kích hoạt đồng bộ hóa dữ liệu từ file script.js
         window.onload = function() {
-            // Cập nhật số hiển thị giỏ hàng trên thanh Header
             if (typeof updateCartBadge === 'function') {
                 updateCartBadge();
             }
-            
-            // Tự đọc id trên đường dẫn URL (?id=...) và nạp dữ liệu máy ảnh vào trang
             if (typeof renderProductDetail === 'function') {
                 renderProductDetail();
             }

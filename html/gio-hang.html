@@ -100,17 +100,13 @@
 function renderCart() {
 
     let cart = [];
-
     try {
         cart = JSON.parse(localStorage.getItem("lumix_cart")) || [];
     } catch (e) {
         cart = [];
     }
-
     const container = document.getElementById("cart-container");
-
     container.innerHTML = "";
-
     let total = 0;
 
     if (cart.length === 0) {

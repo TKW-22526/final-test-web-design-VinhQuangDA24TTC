@@ -421,15 +421,10 @@ const productlist = [
 },
 ];
 
-// ==========================================
-// 2. HÀM SINH SẢN PHẨM (DOM THUẦN - CẬP NHẬT 2 NÚT)
-// ==========================================
 function addproduct(id, name, price, image, hyperlink) {
-    // Khung cột lớn bao quanh phần tử
     const productItem = document.createElement("div");
     productItem.setAttribute("class", "product-item col");
 
-    // Khung ảnh vuông bo tròn chống tràn
     const productImage = document.createElement("div");
     productImage.setAttribute("class", "product-image ratio ratio-1x1 overflow-hidden border rounded shadow-sm bg-white");
 
@@ -437,66 +432,50 @@ function addproduct(id, name, price, image, hyperlink) {
     img.setAttribute("src", image);
     img.setAttribute("alt", name);
     img.setAttribute("class", "img-fluid object-fit-contain h-100 p-2"); 
-
     productImage.appendChild(img);
 
-    // Khung thông tin sản phẩm bên dưới ảnh
     const productInfor = document.createElement("div");
     productInfor.setAttribute("class", "product-infor mt-2 text-center");
 
-    // Tên sản phẩm chữ in đậm và tự cắt ngắn khi quá dài
     const productName = document.createElement("p");
     productName.setAttribute("class", "fw-bold mb-1 text-truncate px-1 small");
     productName.textContent = name;
 
-    // Giá màu đỏ nổi bật
     const productPrice = document.createElement("p");
     productPrice.setAttribute("class", "text-danger fw-semibold mb-2 small");
     productPrice.textContent = price;
 
-    // KHUNG CHỨA HAI NÚT ĐIỀU HƯỚNG CẠNH NHAU (Flexbox)
     const btnGroup = document.createElement("div");
     btnGroup.setAttribute("class", "d-flex gap-1 px-1");
 
-    // Nút 1: Xem chi tiết
     const productLink = document.createElement("a");
     productLink.textContent = "Chi tiết";
     productLink.setAttribute("href", hyperlink + "?id=" + id);
     productLink.setAttribute("class", "btn btn-info btn-sm flex-grow-1 fw-medium text-white px-1");
     productLink.style.fontSize = "12px";
 
-    // Nút 2: Thêm nhanh vào giỏ hàng (Icon 🛒+)
     const addCartBtn = document.createElement("button");
     addCartBtn.innerHTML = '<i class="bi bi-cart-plus-fill"></i>';
     addCartBtn.setAttribute("class", "btn btn-danger btn-sm px-2");
     addCartBtn.setAttribute("title", "Thêm nhanh vào giỏ");
     addCartBtn.setAttribute("onclick", `addToCart(${id})`);
 
-    // Gắn hai nút vào hàng ngang chung
     btnGroup.appendChild(productLink);
     btnGroup.appendChild(addCartBtn);
 
-    // Xếp các tầng vào khối thông tin sản phẩm
     productInfor.appendChild(productName);
     productInfor.appendChild(productPrice);
     productInfor.appendChild(btnGroup);
 
-    // Kết hợp cấu trúc ảnh + thông tin thành một thực thể hoàn thiện
     productItem.appendChild(productImage);
     productItem.appendChild(productInfor);
 
-    // Đẩy thực thể vừa dựng xong lên giao diện chính
     const listContainer = document.getElementById("product-list");
     if (listContainer) {
         listContainer.appendChild(productItem);
     }
 }
 
-// ==========================================
-// 3. HÀM LOGIC QUẢN LÝ ĐỒNG BỘ GIỎ HÀNG LOCALSTORAGE
-// ==========================================
-
-// Hàm A: Quét mảng dữ liệu tính toán tổng số lượng đẩy lên Badge Header
 function updateCartBadge() {
     let cart = [];
     try {
@@ -517,7 +496,6 @@ function updateCartBadge() {
     }
 }
 
-// Hàm B: Lưu trữ hoặc nâng số lượng sản phẩm khi người mua nhấn chọn
 function addToCart(productId) {
     let cart = [];
     try {
@@ -528,7 +506,6 @@ function addToCart(productId) {
 
     let found = false;
 
-    // Tìm kiếm sản phẩm trùng khớp id trong kho lưu trữ cục bộ
     for (let i = 0; i < cart.length; i++) {
         if (cart[i].id === productId) {
             let currentQty = parseInt(cart[i].quantity, 10);
@@ -538,7 +515,6 @@ function addToCart(productId) {
         }
     }
 
-    // Nếu mua lần đầu, trích xuất dữ liệu thô từ danh sách productlist nạp vào
     if (!found) {
         let productData = productlist.find(function(p) {
             return p.id === productId;
@@ -559,7 +535,6 @@ function addToCart(productId) {
     alert("Đã thêm sản phẩm vào giỏ hàng thành công! 🎉");
 }
 
-// Hàm C: Đọc chuỗi truy vấn để cập nhật nội dung cho trang chi tiết (?id=...)
 function renderProductDetail() {
     const urlParams = new URLSearchParams(window.location.search);
     const productId = parseInt(urlParams.get('id'), 10);

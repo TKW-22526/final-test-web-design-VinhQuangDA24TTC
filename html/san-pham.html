@@ -124,7 +124,7 @@
     </div>
 
     <script>
-        // Hàm hiển thị mặc định tất cả sản phẩm
+
         function renderDefault() {
             const container = document.getElementById("product-list");
             if (!container) return;
@@ -137,7 +137,6 @@
             }
         }
 
-        // Hàm xử lý lọc dữ liệu
         function filterData(type) {
             const container = document.getElementById("product-list");
             if (!container || typeof productlist === 'undefined') return;
@@ -170,16 +169,13 @@
             });
         }
 
-        // Đợi toàn bộ trang và file script.js nạp xong hoàn toàn rồi mới thực thi
         window.onload = function() {
             renderDefault();
             
-            // Tự động gọi lại hàm cập nhật badge từ file script.js để xóa lỗi hiển thị số 0/NaN cũ
             if (typeof updateCartBadge === 'function') {
                 updateCartBadge();
             }
 
-            // Quản lý hiệu ứng đổi trạng thái Active của các nút bấm lọc
             const filterButtons = document.querySelectorAll('.mb-4 .btn');
             filterButtons.forEach(btn => {
                 btn.addEventListener('click', function() {
